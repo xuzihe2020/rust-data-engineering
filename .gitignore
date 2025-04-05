@@ -1,5 +1,5 @@
 # === Rust-specific ===
-target              # Cargo build output (can be large)
-**/target           # All target folders (including nested ones)
-**/Cargo.lock       # (Optional: ignore if you're building libraries)
-**/*.rs.bk          # Rust backup files (rare)
+/target
+/**/target
+/Cargo.lock
+/**/Cargo.lock

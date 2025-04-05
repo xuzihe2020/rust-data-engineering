@@ -2,8 +2,8 @@
 //! A vector is a growable array. It can grow or shrink in size and is one of the most
 //! useful data structures in Rust. A vector is represented using the Vec<T> type.
 
-use rand::seq::SliceRandom;
 use rand::rng;
+use rand::seq::SliceRandom;
 
 fn main() {
     let mut fruit: Vec<&str> = vec![
@@ -18,7 +18,7 @@ fn main() {
 
     let mut rng: rand::prelude::ThreadRng = rng();
     fruit.shuffle(&mut rng);
-    
+
     // Print the (shuffled) fruit salad
     for (i, item) in fruit.iter().enumerate() {
         if i != fruit.len() - 1 {

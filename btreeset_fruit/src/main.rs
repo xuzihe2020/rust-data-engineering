@@ -16,6 +16,7 @@ fn main() {
     ];
 
     let amounts = [1, 3, 5, 7, 9];
+    // amount is an iterator, so need to dereference it below.
     for amount in amounts.iter() {
         let mut rng = rng();
         let mut shuffled_fruit = all_fruit.clone();
